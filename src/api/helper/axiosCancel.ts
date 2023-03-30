@@ -6,8 +6,13 @@ import qs from "qs";
 let pendingMap = new Map<string, Canceler>();
 
 // * 序列化参数
-export const getPendingUrl = (config: AxiosRequestConfig) =>
-	[config.method, config.url, qs.stringify(config.data), qs.stringify(config.params)].join("&");
+export const getPendingUrl = (config: AxiosRequestConfig) => {
+	// console.log(
+	// 	"Serialization parameter: ",
+	// 	[config.method, config.url, qs.stringify(config.data), qs.stringify(config.params)].join("&")
+	// );
+	return [config.method, config.url, qs.stringify(config.data), qs.stringify(config.params)].join("&");
+};
 
 export class AxiosCanceler {
 	/**

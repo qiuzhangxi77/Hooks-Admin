@@ -3,7 +3,8 @@ import { getBrowserLang } from "@/utils/util";
 import { ConfigProvider } from "antd";
 import { connect } from "react-redux";
 import { setLanguage } from "@/redux/modules/global/action";
-import { HashRouter } from "react-router-dom";
+// import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import AuthRouter from "@/routers/utils/authRouter";
 import Router from "@/routers/index";
 import useTheme from "@/hooks/useTheme";
@@ -13,6 +14,7 @@ import i18n from "i18next";
 import "moment/dist/locale/zh-cn";
 
 const App = (props: any) => {
+	console.log("App render------");
 	const { language, assemblySize, themeConfig, setLanguage } = props;
 	const [i18nLocale, setI18nLocale] = useState(zhCN);
 
@@ -29,20 +31,30 @@ const App = (props: any) => {
 	};
 
 	useEffect(() => {
+		console.log("App effect!!!!!!");
 		// 全局使用国际化
 		i18n.changeLanguage(language || getBrowserLang());
 		setLanguage(language || getBrowserLang());
 		setAntdLanguage();
 	}, [language]);
 
+	console.log("App render++++++");
+
 	return (
-		<HashRouter>
+		// <HashRouter>
+		// 	<ConfigProvider locale={i18nLocale} componentSize={assemblySize}>
+		// 		<AuthRouter>
+		// 			<Router />
+		// 		</AuthRouter>
+		// 	</ConfigProvider>
+		// </HashRouter>
+		<BrowserRouter>
 			<ConfigProvider locale={i18nLocale} componentSize={assemblySize}>
 				<AuthRouter>
 					<Router />
 				</AuthRouter>
 			</ConfigProvider>
-		</HashRouter>
+		</BrowserRouter>
 	);
 };
 
