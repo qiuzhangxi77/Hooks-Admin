@@ -18,9 +18,12 @@ const LoginForm = (props: any) => {
 	const [form] = Form.useForm();
 	const [loading, setLoading] = useState<boolean>(false);
 
+	console.log("LoginForm render------");
+
 	// 登录
 	const onFinish = async (loginForm: Login.ReqLoginForm) => {
 		try {
+			console.log("setLoading(true)");
 			setLoading(true);
 			loginForm.password = md5(loginForm.password);
 			const { data } = await loginApi(loginForm);
@@ -29,6 +32,7 @@ const LoginForm = (props: any) => {
 			message.success("登录成功！");
 			navigate(HOME_URL);
 		} finally {
+			console.log("setLoading(false)");
 			setLoading(false);
 		}
 	};

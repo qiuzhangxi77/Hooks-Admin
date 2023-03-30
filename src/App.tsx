@@ -3,7 +3,8 @@ import { getBrowserLang } from "@/utils/util";
 import { ConfigProvider } from "antd";
 import { connect } from "react-redux";
 import { setLanguage } from "@/redux/modules/global/action";
-// import { HashRouter } from "react-router-dom";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { HashRouter } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import AuthRouter from "@/routers/utils/authRouter";
 import Router from "@/routers/index";

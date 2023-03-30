@@ -12,7 +12,7 @@ const BreadcrumbNav = (props: any) => {
 		<>
 			{!themeConfig.breadcrumb && (
 				<Breadcrumb>
-					<Breadcrumb.Item href={`#${HOME_URL}`}>首页</Breadcrumb.Item>
+					<Breadcrumb.Item href={`${HOME_URL}`}>首页</Breadcrumb.Item>
 					{breadcrumbList.map((item: string) => {
 						return <Breadcrumb.Item key={item}>{item !== "首页" ? item : null}</Breadcrumb.Item>;
 					})}
@@ -21,6 +21,9 @@ const BreadcrumbNav = (props: any) => {
 		</>
 	);
 };
+{
+	/* <Breadcrumb.Item href={`${HOME_URL}`}>首页</Breadcrumb.Item> */
+}
 
 const mapStateToProps = (state: any) => state;
 export default connect(mapStateToProps)(BreadcrumbNav);

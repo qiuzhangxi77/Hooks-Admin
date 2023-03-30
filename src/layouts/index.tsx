@@ -14,6 +14,7 @@ import "./index.less";
 const LayoutIndex = (props: any) => {
 	const { Sider, Content } = Layout;
 	const { isCollapse, updateCollapse, setAuthButtons } = props;
+	console.log("LayoutIndex render------");
 
 	// 获取按钮权限列表
 	const getAuthButtonsList = async () => {
@@ -33,9 +34,11 @@ const LayoutIndex = (props: any) => {
 	};
 
 	useEffect(() => {
+		console.log("LayoutIndex effect!!!!!!");
 		listeningWindow();
 		getAuthButtonsList();
 	}, []);
+	console.log("LayoutIndex render++++++");
 
 	return (
 		// 这里不用 Layout 组件原因是切换页面时样式会先错乱然后在正常显示，造成页面闪屏效果

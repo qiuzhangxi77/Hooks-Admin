@@ -38,5 +38,6 @@ const Router = () => {
 	const routes = useRoutes(rootRouter);
 	return routes;
 };
+console.log("rootRouter: ", rootRouter);
 
 export default Router;

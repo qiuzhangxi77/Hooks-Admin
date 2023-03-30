@@ -3,16 +3,22 @@ import { getMenuList } from "@/api/modules/login";
 import { Dispatch } from "react";
 
 // * updateCollapse
-export const updateCollapse = (isCollapse: boolean) => ({
-	type: types.UPDATE_COLLAPSE,
-	isCollapse
-});
+export const updateCollapse = (isCollapse: boolean) => {
+	console.log("store.menu.updateCollapse: ", isCollapse);
+	return {
+		type: types.UPDATE_COLLAPSE,
+		isCollapse
+	};
+};
 
 // * setMenuList
-export const setMenuList = (menuList: Menu.MenuOptions[]) => ({
-	type: types.SET_MENU_LIST,
-	menuList
-});
+export const setMenuList = (menuList: Menu.MenuOptions[]) => {
+	console.log("store.menu.setMenuList: ", menuList);
+	return {
+		type: types.SET_MENU_LIST,
+		menuList
+	};
+};
 
 // ? 下面方法仅为测试使用，不参与任何功能开发
 interface MenuProps {
