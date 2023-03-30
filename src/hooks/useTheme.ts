@@ -1,5 +1,10 @@
 import defaultTheme from "@/styles/theme/theme-default.less";
 import darkTheme from "@/styles/theme/theme-dark.less";
+// import defaultTheme from "@/styles/theme/theme-default.less";
+// import darkTheme from "@/styles/theme/theme-dark.less";
+// 注意import ... 和 import {} from 的区别
+// 在样式上，import是会直接导入并解析到style，而import {} from是不会导入到style中（因此后者是不会有样式覆盖的问题）
+// 在代码上，一般不会import ..ts 而是一般会import {} from ..ts 的接口，但注意即使有些执行代码不在export的接口里也会执行
 import { ThemeConfigProp } from "@/redux/interface";
 
 /**
