@@ -13,6 +13,8 @@ const axiosCanceler = new AxiosCanceler();
 const AuthRouter = (props: { children: JSX.Element }) => {
 	const { pathname } = useLocation();
 	const route = searchRoute(pathname, rootRouter);
+	console.log("pathname: ", pathname);
+	console.log("route: ", route);
 	// * 在跳转路由之前，清除所有的请求
 	axiosCanceler.removeAllPending();
 

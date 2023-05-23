@@ -4,23 +4,7 @@
 
 🚀🚀🚀 Hooks Admin，基于 React18、React-Router v6、React-Hooks、Redux && Redux-Toolkit、TypeScript、Vite2、Ant-Design 开源的一套后台管理框架。
 
-🌈 Redux-Toolkit 版本请切换到 Redux-Toolkit 分支上
-
-### 项目相关文档 📚
-
-- 项目更新日志：[CHANGELOG.md](./CHANGELOG.md)
-
-### 一、在线预览地址 👀
-
-- Link：https://hooks.spicyboy.cn
-
-### 二、Git 仓库地址 (欢迎 Star⭐)
-
-- Gitee：https://gitee.com/laramie/Hooks-Admin
-
-- GitHub：https://github.com/HalseySpicy/Hooks-Admin
-
-### 三、🔨🔨🔨 项目功能
+### 🔨🔨🔨 项目功能
 
 - 🚀 采用最新技术找开发：React18、React-Router v6、React-Hooks、TypeScript、Vite2
 - 🚀 采用 Vite2 作为项目开发、打包工具（配置了 Gzip 打包、跨域代理、打包预览工具……）
@@ -34,7 +18,7 @@
 - 🚀 使用 Prettier 统一格式化代码，集成 Eslint、Stylelint 代码校验规范（项目规范配置）
 - 🚀 使用 husky、lint-staged、commitlint、commitizen、cz-git 规范提交信息（项目规范配置）
 
-### 四、安装使用步骤 📑
+### 安装使用步骤 📑
 
 - **Clone：**
 
@@ -95,7 +79,7 @@ lint:stylelint
 npm run commit
 ```
 
-### 五、项目截图
+### 项目截图
 
 #### 1、登录页：
 
@@ -109,7 +93,7 @@ npm run commit
 
 ![hooks-home-dark](https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/img/20220914150559.png)
 
-### 六、文件资源目录 📚
+### 文件资源目录 📚
 
 ```text
 Hooks-Admin
@@ -157,40 +141,3 @@ Hooks-Admin
 ├─ tsconfig.json          # typescript 全局配置
 └─ vite.config.ts         # vite 配置
 ```
-
-### 七、浏览器支持
-
-> 默认支持以下浏览器。更多浏览器可以查看 [Can I Use Es Module](https://caniuse.com/?search=ESModule)
->
-> **💢 请不要使用 QQ 浏览器开发，QQ 浏览器 不识别 某些 ES6 以上语法**
-
-| ![Edge](https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/md/Edge.png) | ![Firefox](https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/md/Firefox.png) | ![Chrome](https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/md/Chrome.png) | ![Safari](https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/md/Safari.png) |
-| :-----------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-|                              last 2 versions                              |                                 last 2 versions                                 |                                last 2 versions                                |                                last 2 versions                                |
-
-### 八、项目后台接口 🧩
-
-> 项目后台接口完全采用 Mock 数据，感谢以下 Mock 平台支持
-
-- FastMock： https://www.fastmock.site/
-- EasyMock：https://mock.mengxuegu.com/
-
-### 九、微信交流群
-
-> 微信群已超过 200 人，需要加我好友，拉大家进群 🤪
-
-|                                            微信二维码                                             |
-| :-----------------------------------------------------------------------------------------------: |
-| <img src="https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/img/20220914145852.png" width=200> |
-
-### 十、捐赠 🍵
-
-> **如果你正在使用这个项目或者喜欢这个项目的，可以通过以下方式支持我**
-
-- **Star、Fork、Watch** 一键三连 🚀🚀
-
-- 通过 **微信、支付宝** 一次性捐款，够维护访问地址就行 🤣🤣
-
-|                                                         微信                                                          |                                                        支付宝                                                         |
-| :-------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/img/20220610144145.png" alt="Wechat QRcode" width=170> | <img src="https://iamge-1259297738.cos.ap-chengdu.myqcloud.com/img/20220610144200.png" alt="Alipay QRcode" width=170> |
